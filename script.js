@@ -101,7 +101,7 @@ const displayController = (() =>{
         if(winner === 'Draw'){
             sendMsg('Draw!')
         }else{
-            sendMsg(`${winner} won!`)
+            sendMsg(`Player${winner} won!`)
         }
     }
 
@@ -131,7 +131,7 @@ const gameController = (() =>{
             return
         }
         round ++
-        displayController.sendMsg(`${getCurrentPlayer()} turn!`)
+        displayController.sendMsg(`Player${getCurrentPlayer()} turn!`)
     }
 
     const getCurrentPlayer = () =>{
